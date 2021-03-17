@@ -3,13 +3,13 @@ const currentVersion = "1.5.0";
 module.exports = {
   title: "REGARDS",
   tagline: "An opensource software to store and add value to your data.",
-  url: "https://RegardsOss.github.io/",
+  url: "https://ilianaghazali.github.io/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logos/regards-png/regards-favicon.png",
-  organizationName: "RegardsOss",
-  projectName: "RegardsOss.github.io",
+  organizationName: "ilianaghazali",
+  projectName: "ilianaghazali.github.io",
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
@@ -79,7 +79,7 @@ module.exports = {
           position: "right",
         },
         {
-          href: 'https://github.com/RegardsOss/RegardsOss.github.io',
+          href: 'https://github.com/ilianaghazali/ilianaghazali.github.io',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
@@ -120,7 +120,7 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/RegardsOss/RegardsOss.github.io",
+              href: "https://github.com/ilianaghazali/ilianaghazali.github.io",
             },
           ],
         },
@@ -156,7 +156,7 @@ module.exports = {
         docs: {
           path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/RegardsOss/RegardsOss.github.io/edit/master",
+          editUrl: "https://github.com/ilianaghazali/ilianaghazali.github.io/edit/master",
           remarkPlugins: [require("remark-import-partial")],
           lastVersion: "current",
           versions: {
