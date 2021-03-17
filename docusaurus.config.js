@@ -130,14 +130,6 @@ module.exports = {
   },
   plugins: [
     [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
-    [
       '@docusaurus/plugin-content-docs',
       {
         id: "roadmap",
@@ -177,6 +169,11 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        siteMap: {
+            changefreq: 'weekly',
+            priority: 0.5,
+            trailingSlash: false,
+        }
       },
     ],
   ],
