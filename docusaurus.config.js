@@ -3,24 +3,17 @@ const currentVersion = "1.5.0";
 module.exports = {
   title: "REGARDS",
   tagline: "An opensource software to store and add value to your data.",
-  url: "https://RegardsOss.github.io/",
+  url: "https://ilianaghazali.github.io/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/logos/regards-png/regards-favicon.png",
-  organizationName: "RegardsOss",
-  projectName: "RegardsOss.github.io",
+  organizationName: "ilianaghazali",
+  projectName: "ilianaghazali.github.io",
+  onBrokenLinks: "ignore",
   i18n: {
     defaultLocale: 'en',
     locales: ['en', 'fr'],
-    localeConfigs: {
-      en: {
-        label: 'en',
-      },
-      fr: {
-        label: 'fr',
-      },
-    },
   },
   themeConfig: {
     navbar: {
@@ -32,8 +25,8 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/setup/",
-          activeBasePath: "docs/setup/",
+          to: "docs/setup",
+          activeBasePath: "docs/setup",
           label: "Install",
           position: "left",
         },
@@ -44,8 +37,8 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/development/",
-          activeBasePath: "docs/development/",
+          to: "docs/development",
+          activeBasePath: "docs/development",
           label: "Developers",
           position: "left",
         },
@@ -73,16 +66,20 @@ module.exports = {
           position: "right",
         },
         {
-          to: "aboutus/",
-          activeBasePath: "aboutus/",
+          to: "aboutus",
+          activeBasePath: "aboutus",
           label: "About us",
           position: "right",
         },
         {
-          href: 'https://github.com/RegardsOss/RegardsOss.github.io',
+          href: 'https://github.com/ilianaghazali/ilianaghazali.github.io',
           position: 'right',
           className: 'header-github-link',
           'aria-label': 'GitHub repository',
+        },
+        {
+          type: 'localeDropdown',
+          position: 'left',
         },
       ],
     },
@@ -94,7 +91,7 @@ module.exports = {
           items: [
             {
               label: "Manual",
-              to: "/docs/user-guide/",
+              to: "/docs/user-guide",
             },
           ],
         },
@@ -103,15 +100,15 @@ module.exports = {
           items: [
             {
               label: "Install",
-              href: "/docs/setup/",
+              href: "/docs/setup",
             },
             {
               label: "Backend",
-              href: "/docs/development/backend/architecture/concepts/",
+              href: "/docs/development/backend/architecture/concepts",
             },
             {
               label: "Frontend",
-              href: "/docs/development/frontend/introduction/setup/",
+              href: "/docs/development/frontend/introduction/setup",
             },
           ],
         },
@@ -120,7 +117,7 @@ module.exports = {
           items: [
             {
               label: "GitHub",
-              href: "https://github.com/RegardsOss/RegardsOss.github.io",
+              href: "https://github.com/ilianaghazali/ilianaghazali.github.io",
             },
           ],
         },
@@ -133,7 +130,7 @@ module.exports = {
       '@docusaurus/plugin-content-docs',
       {
         id: "roadmap",
-        path: "roadmap",
+        path: "roadmap/",
         routeBasePath: 'roadmap/',
         sidebarPath: require.resolve("./sidebars_roadmap.js"),
       },
@@ -156,7 +153,7 @@ module.exports = {
         docs: {
           path: "docs",
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/RegardsOss/RegardsOss.github.io/edit/master",
+          editUrl: "https://github.com/ilianaghazali/ilianaghazali.github.io/edit/master",
           remarkPlugins: [require("remark-import-partial")],
           lastVersion: "current",
           versions: {
@@ -169,6 +166,9 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        siteMap: {
+            trailingSlash: true,
+        }
       },
     ],
   ],
