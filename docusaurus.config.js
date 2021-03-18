@@ -10,18 +10,6 @@ module.exports = {
   favicon: "img/logos/regards-png/regards-favicon.png",
   organizationName: "ilianaghazali",
   projectName: "ilianaghazali.github.io",
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'fr'],
-    localeConfigs: {
-      en: {
-        label: 'en',
-      },
-      fr: {
-        label: 'fr',
-      },
-    },
-  },
   themeConfig: {
     navbar: {
       style: "dark",
@@ -170,9 +158,7 @@ module.exports = {
           customCss: require.resolve("./src/css/custom.css"),
         },
         siteMap: {
-            changefreq: 'weekly',
-            priority: 0.5,
-            trailingSlash: false,
+            trailingSlash: true,
         }
       },
     ],
